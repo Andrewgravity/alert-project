@@ -34,7 +34,7 @@ To make that possible i have taken the following steps:
 - created a file sensor which looks for csv files in our dag folder
 - made two parallel tasks, one validates the first condition, the second one another accordingly
 - after the validation is complete, there can be no errors, or some errors found, that's why I've implemented the branchOperator which returns one of the next tasks as a result of a boolean expression. In it's turn, the boolean expression is passed to the task through the xcom.
-- in the end we can either have a notification that there are no errors or receive a email that there are actually some errors. We can also have both of outcomes, it depends on the data.
+- in the end we can either have a notification that there are no errors or receive an email using EmailOperator that there were actually errors found. We can also get both outcomes, it depends on the data we have.
 
 <h3>Note</h3>
 I didnt include the data.csv file for project size reasons(570mb).
