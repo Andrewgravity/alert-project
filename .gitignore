@@ -8,12 +8,12 @@ secrets.py
 
 PD.ipynb
 proccessed_data.csv
-# Airflow sqlite databases
 airflow.db
 unittests.db
 email.py
 data.csv
 webserver_config.py
+test.ipynb
 
 # Airflow temporary artifacts
 airflow/git_version
