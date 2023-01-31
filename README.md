@@ -1,19 +1,20 @@
 <h1>Airflow project</h1>
 
-add a .env file with following contents:
+Create logs directory. <br />
+Add a .env file with following contents:
 
 ![Screenshot](env_png.png)
+
+Run ```docker-compose up airflow-init```
+Then ```docker-compose up```
 
 It is also neccessary to edit the airflow.cfg file which is located in config directory
 
 ![Screenshot](smtp.png)
 
-Run ```docker-compose up airflow-init```
-Then ```docker-compose up```
-
 <h2>Accessing the airflow:</h2>
-Connect to localhost:8080 \n
-user: airflow \n
+Connect to localhost:8080 <br />
+user: airflow <br />
 password: airflow
 
 <h3>Connections</h3>
