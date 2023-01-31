@@ -8,7 +8,7 @@ Add a .env file with following contents:
 Run ```docker-compose up airflow-init```
 Then ```docker-compose up```
 
-It is also neccessary to edit the airflow.cfg file which is located in config directory
+It is also neccessary to edit the airflow.cfg file which is located in config directory and restart the airflow
 
 ![Screenshot](smtp.png)
 
@@ -18,7 +18,7 @@ user: airflow <br />
 password: airflow
 
 <h3>Connections</h3>
-Add the following connections:
+Add the following connection: <br />
 
 ![Screenshot](filepath_png.png)
 
