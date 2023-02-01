@@ -1,3 +1,3 @@
 FROM apache/airflow:latest
-RUN pip install pandas
-RUN pip install 'apache-airflow-providers-sendgrid'
+COPY ./requirements.txt /tmp/
+RUN pip install --requirement /tmp/requirements.txt

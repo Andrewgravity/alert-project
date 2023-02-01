@@ -11,16 +11,16 @@ from airflow.utils.db import provide_session
 from airflow.models import XCom
 
 import os
-from datetime import timedelta
 from airflow.utils.dates import days_ago
 from datetime import datetime
-import sys
 import pandas as pd
-import csv
 from json import dumps
-import logging
+import configparser
 
-dag_path = '/opt/airflow/dags' #os.getcwd()
+config = configparser.ConfigParser()
+config.read('/opt/airflow/airflow.cfg')
+dag_path = config['core']['dags_folder']
+
 all_files = os.listdir(dag_path)
 csv_files = list(filter(lambda f: f.endswith('.csv'), all_files))
 
